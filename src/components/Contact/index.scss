@@ -127,3 +127,14 @@
     display: none;
   }
 }
+
+.mail,
+.tel {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    color: #ffd700;
+  }
+}

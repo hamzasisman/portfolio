@@ -105,7 +105,10 @@ const Contact = () => {
           Sultangazi, <br />
           İstanbul <br />
           <br />
-          <span>hamza.ssmnn@gmail.com</span>
+          <a className='tel' href='tel: +905050949959'>+905050949959</a>
+          <br />
+          <a className='mail' href = "mailto: hamza.ssmnn@gmail.com">hamza.ssmnn@gmail.com</a>
+          <span></span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[41.1095102, 28.8547674]} zoom={15}>
