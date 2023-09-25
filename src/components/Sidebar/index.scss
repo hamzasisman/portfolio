@@ -41,58 +41,17 @@
       position: relative;
       text-decoration: none;
 
-      i {
+      svg {
         transition: all 0.3s ease-out;
       }
 
       &:hover {
         color: #ffd700;
+        scale: 115%;
 
         svg {
-          opacity: 0;
+          color: #ffd700;
         }
-
-        &:after {
-          opacity: 1;
-        }
-      }
-
-      &:after {
-        content: '';
-        font-size: 9px;
-        letter-spacing: 0.8px;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-      }
-
-      &:first-child {
-        &:after {
-          content: 'HOME';
-        }
-      }
-    }
-
-    a.about-link {
-      &:after {
-        content: 'ABOUT';
-      }
-    }
-
-    a.contact-link {
-      &:after {
-        content: 'CONTACT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
       }
     }
 
@@ -122,9 +81,14 @@
         color: #4d4d4e;
       }
 
+      svg {
+        transition: all 0.3s ease-out;
+      }
+
       &:hover {
         .anchor-icon {
           color: #ffd700;
+          scale: 115%;
         }
       }
     }
@@ -148,9 +112,11 @@
      }
 
      nav {
-      width: 100%;
+      width: 50%;
+      min-width: 360px;
       top: 0;
-      left: 0;
+      padding-top: 30px;
+      right: 0;
       background: #181818;
       height: 100%;
       margin: 0;
@@ -165,6 +131,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 22px;
+        margin-left: calc(50% - 11px / 1);
+        
       }
 
       a:after {
@@ -185,6 +154,7 @@
         top: 15px;
         right: 15px;
         display: block;
+        cursor: pointer;
      }
   }
 }

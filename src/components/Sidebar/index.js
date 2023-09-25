@@ -12,7 +12,7 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
+  // faSuitcase,
   faBars,
   faClose,
 } from '@fortawesome/free-solid-svg-icons'
